@@ -1,0 +1,15 @@
+{
+  "/api": {
+    "target": "https://37f32cl571.execute-api.eu-central-1.amazonaws.com",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": "/default/wunderfleet-recruiting-backend-dev-save-payment-data"
+    },
+    "headers": {
+      "Access-Control-Allow-Origin": "http://localhost:4200",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
+      "Access-Control-Allow-Headers": "Content-Type"
+    }
+  }
+}

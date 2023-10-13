@@ -15,8 +15,7 @@ export class HandleHttpInterceptor implements HttpInterceptor {
   ): Observable<HttpEvent<any>> {
     const modifiedRequest = request.clone({
       setHeaders: {
-        'Content-Type': 'application/json',
-        // 'Authorization': 'Bearer .....'
+        "Content-Type": "application/json"
       },
     });
 

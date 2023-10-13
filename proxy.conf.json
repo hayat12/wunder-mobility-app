@@ -1,8 +1,0 @@
-{
-  "/api": {
-    "target": "https://37f32cl571.execute-api.eu-central-1.amazonaws.com",
-    "secure": false,
-    "loglevel": "debug",
-    "changeOrigin": true
-  }
-}

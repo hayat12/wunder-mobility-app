@@ -1,0 +1,17 @@
+<form [formGroup] = "form">
+  <div class="row">
+    <div class="col-12 mb-3">
+      <label for="accountOwner" class="form-label">Account Owner</label>
+      <input type="text" class="form-control" formControlName="accountOwner" id="accountOwner" placeholder="First Name">
+    </div>
+    <div class="col-12 mb-3">
+      <label for="iban" class="form-label">IBAN</label>
+      <input type="text" class="form-control" formControlName="iban" id="iban" placeholder="IBAN">
+    </div>
+
+    <div class="col-12 mb-3">
+      <button class="btn btn-outline-secondary me-2" (click)="onBack()">Back</button>
+      <button class="btn btn-primary" (click)="onNextTo()">Next </button>
+    </div>
+  </div>
+  </form>

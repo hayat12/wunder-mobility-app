@@ -1,27 +1,39 @@
-# WunderMobilityApp
+# Wunder Mobility App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
 
-## Development server
+## README.md
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Possible Optimizations
 
-## Code scaffolding
+- Performance: Analyze the application's performance and optimize where necessary. You can use tools like Lighthouse to identify performance bottlenecks and improve the loading speed.
+- Code Splitting: Implement code splitting to load only the necessary JavaScript for different parts of the application, reducing initial load times.
+- Caching: Implement browser caching and server-side caching for frequently requested resources to improve load times and reduce server load.
+- Lazy Loading: Consider implementing lazy loading for modules, components, and assets to improve initial page load times.
+- Reducing Network Requests: Minimize the number of HTTP requests by bundling assets, utilizing sprites, and optimizing images.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Things That Could Be Done Better
 
-## Build
+- Error Handling: Implement better error handling, including user-friendly error messages and proper error logging.
+- Testing: Improve test coverage and add more unit tests, integration tests, and end-to-end tests to ensure code quality and stability.
+- README/Documentation: Enhance README/documentation, including inline code comments and clear instructions for setup and usage.
+- User Experience (UX): Conduct usability testing and gather user feedback to make improvements in the user interface and user experience.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Used Technologies
 
-## Running unit tests
+- Nodejs 16
+- rxjs                            7.8.1
+- typescript                      5.1.6
+- Angular CLI: 16.2.6
+- Node: 18.18.0
+- bootstrap 5
+- NgRx 16
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Problems Faced
 
-## Running end-to-end tests
+- The problem that i faced was the cors error.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Project Structure
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- created reusable component and shared component, which can be used in future.
+- Mention how different modules, components, and services are structured and organized within the project.
+- setup interceptor to handle the http requestß

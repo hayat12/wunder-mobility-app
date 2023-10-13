@@ -1,0 +1,11 @@
+<div class="p-6">
+  <div *ngIf="(success$ | async)?.success && (success$ | async)?.paymentDataId !=''"> class="alert alert-success"
+    role="alert">
+    {{(success$ | async)?.message}}
+  </div>
+
+  <div class="text-center">
+    <button (click)="onNextTo()" class="btn btn-success">Done</button>
+  </div>
+
+</div>

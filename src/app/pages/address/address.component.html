@@ -1,0 +1,27 @@
+<form [formGroup] = "form">
+  <div class="row">
+    <div class="col-12 mb-3">
+      <label for="street" class="form-label">Street</label>
+      <input type="text" class="form-control" formControlName="street" id="street" placeholder="Street">
+    </div>
+    <div class="col-12 mb-3">
+      <label for="houseNo" class="form-label">House No</label>
+      <input type="text" class="form-control" formControlName="houseNo" id="houseNo" placeholder="House No">
+    </div>
+
+    <div class="col-12 mb-3">
+      <label for="zipCode" class="form-label">Zip Code</label>
+      <input type="text" class="form-control" formControlName="zipCode" id="zipCode" placeholder="Zip Code">
+    </div>
+
+    <div class="col-12 mb-3">
+      <label for="city" class="form-label">city</label>
+      <input type="text" class="form-control" formControlName="city" id="city" placeholder="city">
+    </div>
+
+    <div class="col-12 mb-3">
+      <button class="btn btn-outline-secondary me-2" (click)="onBack()">Back</button>
+      <button class="btn btn-primary" (click)="onNextTo()">Next </button>
+    </div>
+  </div>
+  </form>

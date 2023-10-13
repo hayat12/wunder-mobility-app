@@ -1,0 +1,14 @@
+<div class="wm mt-2">
+  <ul class="wm-list">
+    <li class="wm-item" *ngFor="let step of steps; let i=index" [ngClass]="step.className">
+      <wc-step [step]="step" [count]="i+1" #step></wc-step>
+    </li>
+  </ul>
+</div>
+
+<div>
+  <div *ngIf="(success$ | async)?.success==false && (success$ | async)?.message !=''" class="alert alert-danger"
+    role="alert">
+    {{(success$ | async)?.message}}
+  </div>
+</div>

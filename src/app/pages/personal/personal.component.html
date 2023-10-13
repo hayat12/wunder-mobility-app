@@ -1,0 +1,21 @@
+<form [formGroup] = "form">
+<div class="row">
+  <div class="col-12 mb-3">
+    <label for="firstName" class="form-label">First Name</label>
+    <input type="text" class="form-control" formControlName="firstName" id="firstName" placeholder="First Name">
+  </div>
+  <div class="col-12 mb-3">
+    <label for="lastName" class="form-label">Last Name</label>
+    <input type="text" class="form-control" formControlName="lastName" id="lastName" placeholder="Last Name">
+  </div>
+
+  <div class="col-12 mb-3">
+    <label for="telephone" class="form-label">Phone No</label>
+    <input type="text" class="form-control" formControlName="telephone" id="telephone" placeholder="Phone No">
+  </div>
+
+  <div class="col-12 mb-3">
+    <button class="btn btn-primary" (click)="onNextTo()">Next </button>
+  </div>
+</div>
+</form>

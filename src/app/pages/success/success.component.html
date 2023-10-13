@@ -1,6 +1,5 @@
 <div class="p-6">
-  <div *ngIf="(success$ | async)?.success && (success$ | async)?.paymentDataId !=''"> class="alert alert-success"
-    role="alert">
+  <div *ngIf="(success$ | async)?.success && (success$ | async)?.paymentDataId !=''" class="alert alert-success" role="alert">
     {{(success$ | async)?.message}}
   </div>
 
